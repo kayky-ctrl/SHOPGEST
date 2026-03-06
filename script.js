@@ -10,7 +10,7 @@ async function carregarClientes() {
         listaClientes.innerHTML = clientes.map(c => `
             <div class="card">
                 <b>#${c.id} — ${c.nome}</b>
-                <p><strong>CPF:</strong> ${c.cpf}</p>
+                <p><strong>CPF:</strong> ${c.cpf} </p>
                 <p><strong>Email:</strong> ${c.email}</p>
             </div>
         `).join("");

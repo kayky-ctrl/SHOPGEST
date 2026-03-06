@@ -72,8 +72,8 @@ h3 {
     appearance: none; /* Remove a seta padrão em alguns navegadores se desejar customizar */
 }
 
-.form-card select:focus {
-    outline: none;
+.form-card select:focus   {
+    outline: none;   
     border-color: #0ea5a4;
 }
 
