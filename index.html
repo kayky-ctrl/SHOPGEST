@@ -1,75 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <title>ShopGest</title>
+    <title>ShopGest - Clientes</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fonte global Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <nav class="nav-menu">
+        <a href="clientes.html" class="active">Clientes</a>
+        <a href="pedidos.html">Pedidos</a>
+    </nav>
 
-    <h1>Painel ShopGest</h1>
+    <h1>Gestão de Clientes</h1>
 
-    <div class="forms-row">
-        <div class="form-card">
-            <h3>Criar Cliente</h3>
-            <form id="formCriarCliente">
-                <label>Nome
-                    <input type="text" name="nome" placeholder="Insira seu nome" required>
-                </label>
-                <label>CPF
-                    <input type="text" name="cpf" placeholder="Insira seu CPF" required>
-                </label>
-                <label>Email
-                    <input type="email" name="email" placeholder="Insira seu email" required>
-                </label>
-                <label>Número do Cartão
-                    <input type="text" name="numeroCartao" placeholder="Insira o número do cartão" required>
-                </label>
-                <button type="submit" class="btn">Criar Cliente</button>
-            </form>
-        </div>
-
-        <div class="form-card">
-            <h3>Criar Pedido</h3>
-            <form id="formCriarPedido">
-                <label>Cliente ID
-                    <input type="number" name="clienteId" required placeholder="ID do cliente">
-                </label>
-                <label>Endereço de Entrega
-                    <input type="text" name="enderecoEntrega" required placeholder="Insira o endereço de entrega">
-                </label>
-                <label>Valor Total
-                    <input type="number" name="valorTotal" required placeholder="Insira o valor total">
-                </label>
-                <button type="submit" class="btn">Criar Pedido</button>
-            </form>
-        </div>
+    <div class="form-card">
+        <h3>Criar Cliente</h3>
+        <form id="formCriarCliente">
+            <label>Nome
+                <input type="text" name="nome" placeholder="Insira seu nome" required>
+            </label>
+            <label>CPF
+                <input type="text" name="cpf" placeholder="Insira seu CPF" required>
+            </label>
+            <label>Email
+                <input type="email" name="email" placeholder="Insira seu email" required>
+            </label>
+            <label>Número do Cartão
+                <input type="text" name="numeroCartao" placeholder="Insira o número do cartão" required>
+            </label>
+            <button type="submit" class="btn">Criar Cliente</button>
+        </form>
     </div>
 
     <div>
-        <h3>Clientes</h3>
+        <h3>Lista de Clientes</h3>
     </div>
     <div id="listaClientes" class="container-cards"></div>
 
-    <div>
-        <hr>
-    </div>
-
-    <div>
-        <h3>📦 Pedidos</h3>
-    </div>
-    <div id="listaPedidos" class="container-cards"></div>
-
     <script src="script.js"></script>
 </body>
-
 </html>

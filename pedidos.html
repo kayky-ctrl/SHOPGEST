@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShopGest - Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-menu">
+        <a href="index.html">Clientes</a>
+        <a href="pedidos.html" class="active">Pedidos</a>
+    </nav>
+
+    <h1>Gestão de Pedidos</h1>
+
+    <div class="form-card">
+        <h3>Criar Pedido</h3>
+        <form id="formCriarPedido">
+            <label>Selecionar Cliente
+                <select name="clienteId" id="selectClientes" required>
+                    <option value="">Carregando clientes...</option>
+                </select>
+            </label>
+            <label>Endereço de Entrega
+                <input type="text" name="enderecoEntrega" required placeholder="Insira o endereço de entrega">
+            </label>
+            <label>Valor Total
+                <input type="number" name="valorTotal" required placeholder="Insira o valor total">
+            </label>
+            <button type="submit" class="btn">Criar Pedido</button>
+        </form>
+    </div>
+
+    <div>
+        <h3>📦 Lista de Pedidos</h3>
+    </div>
+    <div id="listaPedidos" class="container-cards"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
